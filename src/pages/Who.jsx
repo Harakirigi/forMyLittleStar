@@ -50,7 +50,7 @@ const Who = () => {
                     <h1>Who are you?</h1>
                     <p>What's your name? Could you please type it here:</p>
                     <div className="input-container">
-                        <input type="text" value={name} id="name-field" className="text-field" onChange={(e) => setName(e.target.value)} placeholder=""></input>
+                        <input type="text" value={name} id="name-field" className="text-field" onChange={(e) => setName(e.target.value)} placeholder="" autoComplete="off"></input>
                         <label htmlFor="input" className="text-label">Write your real name...</label>
                     </div>
                     <Button className={"white-primary"} onClick={handleSubmit}>Let's see...</Button>
