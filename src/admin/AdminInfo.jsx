@@ -23,9 +23,9 @@ const AdminInfo = () => {
         const getInfo = async () => {
             try {
                 const starId = localStorage.getItem("id-for-search")
-                const resStar = await axios.get(`http://localhost:5005/star/${starId}`)
-                const resQuestion = await axios.get(`http://localhost:5005/star/${starId}/question`)
-                const resChoice = await axios.get(`http://localhost:5005/star/${starId}/choice`)
+                const resStar = await axios.get(`https://for-my-little-star-server.vercel.app/star/${starId}`)
+                const resQuestion = await axios.get(`https://for-my-little-star-server.vercel.app/star/${starId}/question`)
+                const resChoice = await axios.get(`https://for-my-little-star-server.vercel.app/star/${starId}/choice`)
                 setStar(resStar)
                 setQuestion(resQuestion)
                 setChoice(resChoice)
@@ -38,7 +38,7 @@ const AdminInfo = () => {
 
     const answerSubmit = async (starId, questionId) => {
         try {
-            const res = await axios.post(`http://localhost:5005/star/${starId}/question/${questionId}/answer`, {answerContent: answer})
+            const res = await axios.post(`https://for-my-little-star-server.vercel.app/star/${starId}/question/${questionId}/answer`, {answerContent: answer})
             if (res.data.updatedQuestion.acknowledged == true) {
                 toast.success("Answer acknowledged", {className: 'success-toast'})
                 setAnswer('')
@@ -54,7 +54,7 @@ const AdminInfo = () => {
     const deleteUser = async () => {
         const starId = localStorage.getItem("id-for-search")
         try {
-            await axios.delete(`http://localhost:5005/star/${starId}`)
+            await axios.delete(`https://for-my-little-star-server.vercel.app/star/${starId}`)
             navigate("/admin")
             toast.success("User deleted successfully", {className: 'success-toast'})
         } catch (error) {

@@ -28,7 +28,7 @@ const QuestionSeven = () => {
                 toast.warning("Your answer is too long", {className: "warning-toast"})
             }
             else if (answer && validNames.includes(name)) {
-                await axios.post(`http://localhost:5005/star/${starId}/choice`, {choiceKey: question, choiceValue: answer})
+                await axios.post(`https://for-my-little-star-server.vercel.app/star/${starId}/choice`, {choiceKey: question, choiceValue: answer})
                 localStorage.setItem("plans", answer)
                 navigate("/question/8")
                 toast.success("Thank you for your response", {className: "success-toast"})

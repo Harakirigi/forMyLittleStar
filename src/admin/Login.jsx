@@ -16,7 +16,7 @@ const Login = () => {
             if (!id) {
                 toast.error("ID is empty", {className: 'error-toast'})
             } else if (id) {
-                const response = await axios.get(`http://localhost:5005/star/${id}`)
+                const response = await axios.get(`https://for-my-little-star-server.vercel.app/star/${id}`)
                 localStorage.setItem("username", response.data.star.name)
                 localStorage.setItem("starId", response.data.star._id)
                 navigate("/")
