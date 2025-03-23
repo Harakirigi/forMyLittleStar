@@ -329,7 +329,7 @@ const Memory = () => {
 
                 <div className='block decor memory-block self-center mt-76' data-aos="zoom-in-up" data-aos-duration="500" data-aos-offset="300" data-aos-easing="ease-out">
                     <div className='image'>
-                        <img src='../image/default.jpg' onClick={(e) => openModal(e.target.src)}></img>
+                        <img src='../image/pizza.jpg' onClick={(e) => openModal(e.target.src)}></img>
                     </div>
                     <p className='datetime'>18th September, 2024</p>
                     <h1>Slice of Autumn</h1>
@@ -377,7 +377,13 @@ const Memory = () => {
 
                 <div className='block decor memory-block self-center mt-76' data-aos="zoom-in-up" data-aos-duration="500" data-aos-offset="300" data-aos-easing="ease-out">
                     <div className='image'>
-                        <img src='../image/default.jpg' onClick={(e) => openModal(e.target.src)}></img>
+                        <img src='../image/rolls.jpg' onClick={(e) => openModal(e.target.src)}></img>
+                    </div>
+                    <div className='image second'>
+                        <img src='../image/rolls-3.jpg' onClick={(e) => openModal(e.target.src)}></img>
+                    </div>
+                    <div className='image third'>
+                        <img src='../image/rolls-2.jpg' onClick={(e) => openModal(e.target.src)}></img>
                     </div>
                     <p className='datetime'>26th December, 2024</p>
                     <h1>Rolls & Reels</h1>
@@ -389,7 +395,13 @@ const Memory = () => {
 
                 <div className='block decor memory-block self-start mt-76' data-aos="zoom-in-right" data-aos-duration="500" data-aos-offset="300" data-aos-easing="ease-out">
                     <div className='image'>
-                        <img src='../image/default.jpg' onClick={(e) => openModal(e.target.src)}></img>
+                        <img src='../image/ordinary-4.jpg' onClick={(e) => openModal(e.target.src)}></img>
+                    </div>
+                    <div className='image second'>
+                        <img src='../image/ordinary-2.jpg' onClick={(e) => openModal(e.target.src)}></img>
+                    </div>
+                    <div className='image third'>
+                        <img src='../image/ordinary.jpg' onClick={(e) => openModal(e.target.src)}></img>
                     </div>
                     <p className='datetime'>27th December, 2024</p>
                     <h1>Our Everyday Escape</h1>
@@ -414,7 +426,13 @@ const Memory = () => {
 
                 <div className='block decor memory-block self-center mt-76' data-aos="zoom-in-up" data-aos-duration="500" data-aos-offset="300" data-aos-easing="ease-out">
                     <div className='image'>
-                        <img src='../image/default.jpg' onClick={(e) => openModal(e.target.src)}></img>
+                        <img src='../image/valentine.jpg' onClick={(e) => openModal(e.target.src)}></img>
+                    </div>
+                    <div className='image second'>
+                        <img src='../image/valentine-2.jpg' onClick={(e) => openModal(e.target.src)}></img>
+                    </div>
+                    <div className='image third'>
+                        <img src='../image/valentine-3.jpg' onClick={(e) => openModal(e.target.src)}></img>
                     </div>
                     <p className='datetime'>15th February, 2025</p>
                     <h1>A Valentine to Remember</h1>
