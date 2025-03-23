@@ -37,7 +37,10 @@ const Home = () => {
                     <div className='block'>
                         <h1>Verify yourself</h1>
                         <p>To have access to the content of this website I should know <br></br> who you are — are you my girlfriend?</p>
-                        <Button className={'white-primary'} onClick={() => navigate("/who")}>Who are you?</Button>
+                        <div className='block-buttons'>
+                            <Button className={"white-outline"} onClick={() => navigate("/login")}>Use your ID instead</Button>
+                            <Button className={'white-primary'} onClick={() => navigate("/who")}>Who are you?</Button>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -52,7 +52,7 @@ const Gift = () => {
                     <img src='../twirly-flower.svg' className='icon flower-circle'></img>
                     <h1>The Little Things You Do</h1>
                     <p>
-                        The way you laugh, soft and free, or how your eyes wrinkle when you tease me—it’s these small joys I keep close.<br></br>
+                        The way you laugh, soft and free, or how your eyes wrinkle when you tease me — it’s these small joys I keep close.<br></br>
                         You’ve become a part of my days, a thread of happiness I never get tired of following.<br></br>
                         How do you make simple moments feel so magical?
                     </p>
@@ -61,7 +61,7 @@ const Gift = () => {
                     <img src='../spoted-flower.svg' className='icon flower-circle'></img>
                     <h1>Your Whispered Magic</h1>
                     <p>
-                        Sometimes, it’s the quiet moments that get to me—your voice, low and warm, sharing secrets only for us.<br></br>
+                        Sometimes, it’s the quiet moments that get to me — your voice, low and warm, sharing secrets only for us.<br></br>
                         It’s like a spell you cast without even trying, pulling me closer with every word.<br></br>
                         How do you have so much power in just a whisper?
                     </p>
@@ -71,7 +71,7 @@ const Gift = () => {
                     <h1>Our Shared Orbit</h1>
                     <p>
                         We’ve built something special, haven’t we? A little world where your hand fits mine like stars lining up in the sky.<br></br>
-                        Every moment with you feels both endless and too short—I wish for forever, but cherish every second.<br></br>
+                        Every moment with you feels both endless and too short — I wish for forever, but cherish every second.<br></br>
                         You’re my gravity, always pulling me closer.
                     </p>
                 </div>
@@ -79,7 +79,7 @@ const Gift = () => {
                     <img src='../dandelion-flower.svg' className='icon flower-circle'></img>
                     <h1>To Many More Adventures, Together</h1>
                     <p>
-                        Here’s to us, to anniversaries yet unwritten, and to you—my muse, my mischief, my home.<br></br>
+                        Here’s to us, to anniversaries yet unwritten, and to you — my muse, my mischief, my home.<br></br>
                         I promise to keep chasing your laughter, to flirt shamelessly, and to love you with a passion that only grows.
                     </p>
                 </div>

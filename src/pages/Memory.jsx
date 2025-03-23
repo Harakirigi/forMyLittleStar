@@ -70,21 +70,15 @@ const Memory = () => {
                 )}
                 <div className='block' data-aos="fade-up" data-aos-duration="500" data-aos-offset="500">
                     <h1>Do you remember?</h1>
-                    <p>
-                        Do you remember the very first moment our eyes met, the way time seemed to slow down as if the universe knew something special was beginning? <br></br>
-                        Do you remember our late-night talks, where words flowed effortlessly,  <br></br>
-                        and silence felt just as comforting?
-                    </p>
                     <hr></hr>
-                    <p>
-                        Do you remember the adventures we’ve had—the places we’ve explored, the roads we’ve walked hand in hand,  <br></br>
+                    <p >
+                        Do you remember the adventures we’ve had—the places we’ve explored, <br></br> 
+                        the roads we’ve walked hand in hand, <br></br>
                         the little detours that turned into our favorite memories?  <br></br>
-                        The days when we laughed until our stomachs hurt, and the nights when we held onto each other a little tighter, <br></br>
-                        knowing that no matter what, we had each other?
                     </p>
                     <hr></hr>
-                    <p>
-                        Do you remember the small moments—the stolen glances, the shared smiles,  <br></br>
+                    <p >
+                        Do you remember the small moments — the stolen glances, the shared smiles,  <br></br>
                         the inside jokes that only we understand? The way we found magic in the ordinary,  <br></br>
                         turning everyday moments into something unforgettable?
                     </p>
@@ -223,7 +217,7 @@ const Memory = () => {
                     <p>
                         Back where it all began, <br></br>
                         but with deeper feelings, brighter smiles, <br></br>
-                        and her—more beautiful than ever.
+                        and her — more beautiful than ever.
                     </p>
                 </div>
 
@@ -243,18 +237,6 @@ const Memory = () => {
                         The first of many rides,  <br></br>
                         where we learned that as long as we were together, <br></br>
                         we’d always find balance.
-                    </p>
-                </div>
-
-                <div className='block decor memory-block self-center mt-76' data-aos="zoom-in-up" data-aos-duration="500" data-aos-offset="300" data-aos-easing="ease-out">
-                    <div className='image'>
-                        <img src='../image/default.jpg' onClick={(e) => openModal(e.target.src)}></img>
-                    </div>
-                    <p className='datetime'>5th July, 2024</p>
-                    <h1>Two Hearts, One Ride</h1>
-                    <p>
-                        One bike, two souls, endless laughter — <br></br>
-                        gliding through the daylight like we belonged to the wind. 
                     </p>
                 </div>
 
@@ -414,7 +396,13 @@ const Memory = () => {
 
                 <div className='block decor memory-block self-end mt-76' data-aos="zoom-in-left" data-aos-duration="500" data-aos-offset="300" data-aos-easing="ease-out">
                     <div className='image'>
-                        <img src='../image/default.jpg' onClick={(e) => openModal(e.target.src)}></img>
+                        <img src='../image/ny.jpg' onClick={(e) => openModal(e.target.src)}></img>
+                    </div>
+                    <div className='image second'>
+                        <img src='../image/ny-2.jpg' onClick={(e) => openModal(e.target.src)}></img>
+                    </div>
+                    <div className='image third'>
+                        <img src='../image/ny-3.jpg' onClick={(e) => openModal(e.target.src)}></img>
                     </div>
                     <p className='datetime'>29th December, 2024</p>
                     <h1>Our First Countdown</h1>
@@ -456,7 +444,7 @@ const Memory = () => {
 
                 <div className='block decor memory-block self-end mt-76' data-aos="zoom-in-left" data-aos-duration="500" data-aos-offset="300" data-aos-easing="ease-out">
                     <div className='image'>
-                        <img src='../image/default.jpg' onClick={(e) => openModal(e.target.src)}></img>
+                        <img src='../image/zhastar.jpg' onClick={(e) => openModal(e.target.src)}></img>
                     </div>
                     <p className='datetime'>10th March, 2025</p>
                     <h1>Symphony of Stars</h1>
@@ -468,7 +456,13 @@ const Memory = () => {
 
                 <div className='block decor memory-block self-center mt-76' data-aos="zoom-in-up" data-aos-duration="500" data-aos-offset="300" data-aos-easing="ease-out">
                     <div className='image'>
-                        <img src='../image/default.jpg' onClick={(e) => openModal(e.target.src)}></img>
+                        <img src='../image/final.jpg' onClick={(e) => openModal(e.target.src)}></img>
+                    </div>
+                    <div className='image second'>
+                        <img src='../image/final-4.jpg' onClick={(e) => openModal(e.target.src)}></img>
+                    </div>
+                    <div className='image third'>
+                        <img src='../image/final-3.jpg' onClick={(e) => openModal(e.target.src)}></img>
                     </div>
                     <p className='datetime'>29th March, 2025</p>
                     <h1>Endless Chapters</h1>

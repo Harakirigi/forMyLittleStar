@@ -160,6 +160,18 @@
     padding: 20px;
     color: var(--primary-text);
 }
+.header-text {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 13px;
+    text-align: start;
+    padding: 20px;
+    padding-left: 50px;
+    color: var(--primary-text-hover);
+}
+.header-text span {
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
 
 .secondary-text {
     font-family: 'Fredoka', sans-serif;
@@ -257,7 +269,7 @@ body {
     padding: 20px;
 }
 .scroll-container.in-memory {
-    min-height: 17100px;
+    min-height: 19100px;
 }
 .scroll-container.at-questions {
     min-height: 1500px;
@@ -1139,8 +1151,13 @@ input[type="color"]:hover, input[type="color"]:focus {
     z-index: -1;
 }
 .dashed-line.in-memory {
+    height: 18600px;
     top: 0;
     left: 70%;
+}
+.otp {
+    font-size: 16px;
+    color: var(--primary-text);
 }
 
 @keyframes horizontal-float {

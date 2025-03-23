@@ -8,10 +8,6 @@ AOS.init({
     once: false,
 });
 
-
-// components
-import Button from './components/Button';
-
 // ui
 import { Toaster } from "@/components/ui/sonner"
 
@@ -40,8 +36,10 @@ import AdminInfo from "./admin/AdminInfo";
 import Login from "./admin/Login";
 import QuestionSeven from "./pages/QuestionSeven";
 import QuestionEight from "./pages/QuestionEight";
-
-// functions
+import QuestionNine from "./pages/QuestionNine";
+import Clothes from "./pages/Clothes";
+import Activity from "./pages/Activity";
+import Final from "./pages/Final";
 
  
 
@@ -51,7 +49,7 @@ function App() {
     <>
     <div className='wrapper' id='start-position'>
             <div className='header'>
-                <div className='left-header'><p className='main-text'>{localStorage.getItem("username")}</p></div>
+                <div className='left-header'><p className='header-text'>Your ID: <span>{localStorage.getItem("starId")}</span></p></div>
                 <div className='mid-header'><h1 className='header-heading'>forMyLilStar</h1></div>
                 <div className='right-header'></div>
             </div>
@@ -76,6 +74,10 @@ function App() {
                     <Route path="/question/6" element={<QuestionSix />} />
                     <Route path="/question/7" element={<QuestionSeven />} />
                     <Route path="/question/8" element={<QuestionEight />} />
+                    <Route path="/question/9" element={<QuestionNine />} />
+                    <Route path="/clothes" element={<Clothes />} />
+                    <Route path="/activity" element={<Activity />} />
+                    <Route path="/final" element={<Final />} />
 
 
                     <Route path="/admin/info" element={<AdminInfo />} />

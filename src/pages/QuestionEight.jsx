@@ -55,7 +55,7 @@ const QuestionEight = () => {
             }
             else if (answer && validNames.includes(name)) {
                 await axios.post(`https://formylittlestarbackend-production.up.railway.app/star/${starId}/choice`, {choiceKey: question, choiceValue: answer})
-                navigate("/question/8")
+                navigate("/question/9")
                 toast.success("Thank you for your response", {className: "success-toast"})
             } 
             else {

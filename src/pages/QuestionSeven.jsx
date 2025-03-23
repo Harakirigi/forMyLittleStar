@@ -83,8 +83,8 @@ const QuestionSeven = () => {
                         </div>
                         <div className={`choice-container ${isShowed ? 'visible' : 'hidden'}`} style={{display: isShowed ? 'flex' : 'none'}}>
                             <p>
-                                While anniversary itself, we will have a dinner in some place <br></br> (in which place? We will choose later) <br></br> <br></br>
-                                Then after dinner we will go shopping and buy gift-clothes to each other <br></br> (if no time, next day is reserved for this, Sunday) <br></br> <br></br>
+                                While anniversary itself, we will visit some place <br></br> (which place? We will choose later) <br></br> <br></br>
+                                Then after this we will go to shopping and buy something to each other <br></br> (if no time, next day is reserved for this, Sunday) <br></br> <br></br>
                                 When we will repeat our first date? Right next week, 6th April <br></br> <br></br>
                                 So, are you agreed?
                             </p>
