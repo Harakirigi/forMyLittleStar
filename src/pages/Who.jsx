@@ -21,7 +21,7 @@ const Who = () => {
             } else if (name.length > 256) {
                 toast.warning("Your name is too long", {className: "warning-toast"})
             } else if (validNames.includes(name)) {
-                const response = await axios.post('https://for-my-little-star-server.vercel.app/star', { name })
+                const response = await axios.post('https://formylittlestarbackend.onrender.com/star', { name })
 
                 if (response.data.status === 'Success') {
                     localStorage.setItem("username", name)

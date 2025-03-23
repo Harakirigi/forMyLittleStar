@@ -29,7 +29,7 @@ const Questions = () => {
     useEffect(() => {
         const getQuestion = async () => {
             try {
-                const res = await axios.get(`https://for-my-little-star-server.vercel.app/star/${starId}/question`)
+                const res = await axios.get(`https://formylittlestarbackend.onrender.com/star/${starId}/question`)
                 setResponse(res)
             } catch (error) {
                 console.error(`Error while fetching ${name}'s questions: ${error}`)
@@ -46,10 +46,10 @@ const Questions = () => {
                 toast.warning("Your question is too long", {className: "warning-toast"})
             }
             else if (question && validNames.includes(name)) {
-                await axios.post(`https://for-my-little-star-server.vercel.app/star/${starId}/question`, {questionContent: question})
+                await axios.post(`https://formylittlestarbackend.onrender.com/star/${starId}/question`, {questionContent: question})
                 document.getElementById('question-field').value = ''
                 setQuestion('')
-                const res = await axios.get(`https://for-my-little-star-server.vercel.app/star/${starId}/question`)
+                const res = await axios.get(`https://formylittlestarbackend.onrender.com/star/${starId}/question`)
                 setResponse(res)
                 toast.success("Your question successfully submitted", {className: "success-toast"})
                 seeQuestions()

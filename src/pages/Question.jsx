@@ -25,7 +25,7 @@ const Question = () => {
                 toast.warning("Your question is too long", {className: "warning-toast"})
             }
             else if (question && validNames.includes(name)) {
-                await axios.post(`https://for-my-little-star-server.vercel.app/star/${starId}/question`, {questionContent: question})
+                await axios.post(`https://formylittlestarbackend.onrender.com/star/${starId}/question`, {questionContent: question})
                 navigate("/question/1")
                 toast.success("Your question successfully submitted", {className: "success-toast"})
             } 

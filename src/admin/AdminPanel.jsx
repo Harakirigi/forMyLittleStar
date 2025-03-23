@@ -16,7 +16,7 @@ const AdminPanel = () => {
     useEffect(() => {
         const getStar = async () => {
             try {
-                const response = await axios.get("https://for-my-little-star-server.vercel.app/star")
+                const response = await axios.get("https://formylittlestarbackend.onrender.com/star")
                 setStar(response)
                 console.log(response)
             } catch (error) {
