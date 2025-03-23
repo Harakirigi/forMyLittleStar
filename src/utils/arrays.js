@@ -5,5 +5,18 @@ export const validNames = [
     "zhuldyzzym",
     "Zhuldyzka",
     "zhuldyzka",
+    "ZHULDYZ",
+    "ZHULDYZZYM",
+    "ZHULDYZKA",
+    "ZhUlDyZ",
+    "ZHUldyZ",
+    "ZhuLdyZkA",
+    "ZhUlDyZzYm",
+    "Zhuldyzzum",
+    "Zhuldyyzzym",
+    "ZhuIdyz",
+    "Zhuldyzkaa",
+    "Zuldiz",
+    "Zhuldizym",
 ];
 export const bigPages = ["/gift", "/memory", "/questions", "/admin"];
