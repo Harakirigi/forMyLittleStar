@@ -6,4 +6,4 @@ export const validNames = [
     "Zhuldyzka",
     "zhuldyzka",
 ];
-export const bigPages = ["/gift", "/memory", "/questions"];
+export const bigPages = ["/gift", "/memory", "/questions", "/admin"];
