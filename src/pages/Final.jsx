@@ -34,7 +34,6 @@ const Final = () => {
             }
             else if (answer && validNames.includes(name)) {
                 await axios.post(`https://formylittlestarbackend-production.up.railway.app/star/${starId}/choice`, {choiceKey: question, choiceValue: "Rating: " + rating + ". Feedback: "+ answer})
-                localStorage.setItem("plans", answer)
                 navigate("/")
                 toast.success("Thank you for your feedback!", {className: "success-toast"})
             } 
@@ -56,11 +55,11 @@ const Final = () => {
                     <div className='block'>
                         <h1>We are all set up and ready!</h1>
                         <p>
-                            You answered all the questions for now. If you want, you can go to home page <br></br>
-                            But before, I want you to rate it out of 100, write about your feelings and impressions too
+                            You answered all the questions, thank you! If you want, you can go to home page <br></br>
+                            But before, I want you to rate everything out of 100, write about your feelings and impressions too
                         </p>
                         <InputOTP maxLength={3} value={rating} onChange={(value) => setRating(value)}>
-                        <span className='text-white'>
+                        <span className='main-text'>
                             Rating:
                         </span>
                         <InputOTPGroup>

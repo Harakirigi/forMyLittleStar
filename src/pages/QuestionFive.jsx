@@ -50,8 +50,8 @@ const QuestionFive = () => {
                         <p className='visible'>
                             {question}
                         </p>
-                        <div className="input-container visible">
-                            <input type="text" className="text-field" id="question-field" placeholder="" onChange={(e) => setAnswer(e.target.value)} autoComplete='off'></input>
+                        <div className="input-container big visible">
+                            <textarea type="text" className="text-field" id="question-field" placeholder="" onChange={(e) => setAnswer(e.target.value)} autoComplete='off'></textarea>
                             <label htmlFor="input" className="text-label">Your answer...</label>
                         </div>
                         <div className='block-buttons visible'>

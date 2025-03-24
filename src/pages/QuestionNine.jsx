@@ -64,6 +64,7 @@ const QuestionNine = () => {
                             <label htmlFor="input" className="text-label">Your answer...</label>
                         </div>
                         <div className='block-buttons visible' style={{display: no ? "flex" : "none"}}>
+                            <Button className={'white-outline'} onClick={() => setNo(false)}>Back</Button>
                             <Button className={'white-primary'} onClick={() => handleSubmit(answer)}>Submit</Button>
                         </div>
                     </div>
