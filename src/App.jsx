@@ -59,8 +59,9 @@ function App() {
     if (isMobile) {
     return (
         <div className="block" style={{ padding: '2rem', textAlign: 'center' }}>
-        <h1>Access from mobile devices is prohibited</h1>
-        <p>Please open the website from your computer.</p>
+            <h1>Not Allowed</h1>
+            <p>Access from mobile devices is prohibited</p>
+            <p>Please open the website from your computer.</p>
         </div>
     );
     }
