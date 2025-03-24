@@ -1,4 +1,5 @@
 // modules
+import { useEffect, useState } from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
 import './App.css'
 
@@ -29,11 +30,6 @@ import QuestionThree from "./pages/QuestionThree";
 import QuestionFour from "./pages/QuestionFour";
 import QuestionFive from "./pages/QuestionFive";
 import QuestionSix from "./pages/QuestionSix";
-
-// admin
-import AdminPanel from "./admin/AdminPanel"
-import AdminInfo from "./admin/AdminInfo";
-import Login from "./admin/Login";
 import QuestionSeven from "./pages/QuestionSeven";
 import QuestionEight from "./pages/QuestionEight";
 import QuestionNine from "./pages/QuestionNine";
@@ -41,9 +37,33 @@ import Clothes from "./pages/Clothes";
 import Activity from "./pages/Activity";
 import Final from "./pages/Final";
 
+// admin
+import AdminPanel from "./admin/AdminPanel"
+import AdminInfo from "./admin/AdminInfo";
+import Login from "./admin/Login";
+
  
 
 function App() {
+    const [isMobile, setIsMobile] = useState(false);
+    useEffect(() => {
+        const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+    
+        const mobileRegex = /android|iphone|ipad|ipod|blackberry|iemobile|opera mini/i;
+    
+        if (mobileRegex.test(userAgent)) {
+          setIsMobile(true);
+        }
+      }, []);
+
+    if (isMobile) {
+    return (
+        <div style={{ padding: '2rem', textAlign: 'center' }}>
+        <h2>Доступ с мобильных устройств запрещён</h2>
+        <p>Пожалуйста, откройте сайт с компьютера.</p>
+        </div>
+    );
+    }
 
   return (
     <>
