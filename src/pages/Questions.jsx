@@ -107,7 +107,6 @@ const Questions = () => {
             <div className='scroll-container at-questions' id='questions-stand' data-aos="zoom-in-up" data-aos-duration="1000" data-aos-offset="300">
                 <div className='block'>
                     <h1>Your questions and answers</h1>
-                    {console.log(response)}
                     {response ? (
                         <>
                         {response.data.length === 0 ? (
